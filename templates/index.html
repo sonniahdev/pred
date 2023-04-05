@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       {% load static %}
+     <title>Covid_Free - Profile HTML Page</title>
+
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Convid</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+
+      <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css "%}">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static "css/responsive.css " %}">
+      <!-- fevicon -->
+      <link rel="icon" href="{% static "images/fevicon.png" %}" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{% static "css/jquery.mCustomScrollbar.min.css " %}>
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets -->
+      <link rel="stylesheet" href="{% static "css/owl.carousel.min.css " %}">
+      <link rel="stylesheet" href="{% static "css/owl.theme.default.min.css" %}">
+      <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+      <!--header section start -->
+      <div class="header_section">
+         <div class="container-fluid">
+             <div>
+                   <form>
+    <input type="text" placeholder=" Search...." name="search">
+    <button type="submit">Submit</button>
+    </form>
+
+             </div>
+
+               <div class="main">
+                  <div class="logo"><a href="index.html"><img src="{% static "images/logo.png" %}"></a></div>
+                  <div class="menu_text">
+                     <ul>
+                        <div class="togle_">
+                           <div class="menu_main">
+                              <ul>
+                                 <li><a href="{% url "register" %}">register</a></li>
+                                 <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                              </ul>
+                           </div>
+                        </div>
+
+                           <div class="menu_main">
+                              <ul>
+                                   <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+
+                                 <li><a href="{% url "login" %}">login</a></li>
+                              </ul>
+                           </div>
+                        <div id="myNav" class="overlay">
+                           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                           <div class="overlay-content">
+                              <a href="{% url "Home" %}">Home</a>
+                              <a href="{% url "Protect" %}" >Protect</a>
+                              <a href="{% url "About" %}">About</a>
+                              <a href= "{% url "Doctors" %}">Doctors</a>
+                              <a href= "{% url "News" %}" >News</a>
+                           </div>
+                        </div>
+                        <span class="navbar-toggler-icon"></span>
+                        <span onclick="openNav()"><img src="{% static "images/toogle-icon.png" %}" class="toggle_menu"></span>
+                        <span onclick="openNav()"><img src="{% static "images/toogle-icon1.png" %}" class="toggle_menu_1"></span>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+      <!-- banner section start -->
+
+          <div style="width: 50px;height: 30px;margin :0 auto;">
+              <h1 style="color: white;">HOME</h1>
+          </div>
+      <div class="banner_section layout_padding">
+         <div class="container">
+            <div id="my_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="row" style="margin-right: 15px">
+                        <div class="col-md-6">
+                           <div class="container">
+                              <h1 class="banner_taital">Keep yourself and others safe: Do it all!</h1>
+                              <p class="banner_text">By following and adhering to the Covid-19 protocols as advised by the medical team </p>
+                              <div class="more_bt"><a href="#">Read More</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="banner_img"><img src="{% static "images/np_file_6100.jpeg" %}"style="border-radius: 10px;margin-right: 50px;"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row" style="margin-right: 15px;">
+                        <div class="col-md-6">
+                           <div class="container">
+                              <h1 class="banner_taital">COVID-19 vaccines</h1>
+                              <p class="banner_text">COVID-19 vaccines are safe,free and effective at protecting people from getting seriously ill, being hospitalized, and dying. ..</p>
+                              <div class="more_bt"><a href="#">Read More</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="banner_img"><img src="{% static "images/who_20210302_ghana_covax-stories_007-(1).tmb-1024v.jpg" %}" style="border-radius:10px;margin-right: 50px; "></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row" style="margin-right: 15px;">
+                        <div class="col-md-6">
+                           <div class="container">
+                              <h1 class="banner_taital">Get Medical Care early</h1>
+                              <p class="banner_text">The incubation period for the coronavirus is between 2 and 14 days. On average, COVID-19 symptoms appear around 5 days after exposure, but this can vary..</p>
+                              <div class="more_bt"><a href="#">Read More</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="banner_img"><img src="{% static "images/covidVaccineChild-1266644527-770x553-1.jpg" %}" style="border-radius: 10px;margin-right:50px;"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+               <i > < </i>
+               </a>
+               <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+               <i > > </i>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- banner section end -->
+      </div>
+      <!-- header section end -->
+      <!-- protect section start -->
+      <div class="protect_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="protect_taital">How to Protect Yourself</h1>
+                  <p class="protect_text">Coronavirus disease (COVID-19) is the infectious disease caused by the most recently discovered coronavirus. Most people who become infected experience mild illness and recover, but it can be more severe for others, particularly older people and those with underlying medical conditions. Here are some simple steps you can take to protect your health and the health of other people.
+</p>
+               </div>
+            </div>
+            <div class="protect_section_2 layout_padding">
+               <div class="row">
+                  <div class="col-md-6">
+                     <h1 class="hands_text"><a href="#">Wash your <br>hands frequently</a></h1>
+                     <h1 class="hands_text_2"><a href="#">Maintain social <br>distancing</a></h1>
+                     <h1 class="hands_text"><a href="#">Avoid touching eyes,<br>nose and mouth</a></h1>
+                     <h1 class="hands_text"><a href="#">By wearing,<br>disposable Face masks</a></h1>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="image_2"><img src="{% static "images/istockphoto-1284869164-612x612.jpg" %}"
+                     style="padding-bottom:15px;border-radius: 10px "></div>
+                     <div class="image_2"><img src="{% static "images/istockphoto-1207212199-612x612.jpg" %}"
+                     style="border-radius:10px; "></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- protect section end -->
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+
+                   <div class="image_2"><img src="{% static "images/download (2).jpg" %}" style="height: 400px;width: 1000px;border-radius: 5px;
+                                padding-bottom: 10px;"></div>
+
+               </div>
+               <div class="col-md-6">
+                  <h1 class="about_taital">Coronavirus what it is?</span></h1>
+                  <p class="about_text">Corona, informal term for the coronavirus SARS-CoV-2,
+                      which causes the COVID-19 disease and is responsible for the ongoing pandemic
+                      <br>  The symptoms are:
+      Fever or chills,
+    Cough,
+    Shortness of breath or difficulty breathing,
+    Fatigue,
+    Muscle or body aches,
+    Headache,
+    New loss of taste or smell,
+    Sore throat,
+    Congestion or runny nose,
+    Nausea or vomiting and
+    Diarrhea</p>
+
+                  <div class="read_bt"><a href="#">Read More</a></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
+      <!-- doctor section start -->
+      <div class="doctors_section layout_padding">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="taital_main">
+                     <div class="taital_left">
+                        <div class="play_icon"><img src="{% static "images/play-icon.png" %}"></div>
+                     </div>
+                     <div class="taital_right">
+                        <h1 class="doctor_taital">What doctors say..</h1>
+                        <p class="doctor_text">Doctors say these pandemic side effects are serious problems—and unlikely ‘to go away anytime soon’
+                            <br>People are advised to visit the nearest hospitals: if they experience any side effects,for vaccinations
+                            <br> Self-quarantine at home is also encouraged.employees are encouraged to work from home. people are also urged to avoid crowded places as well as adhere to all protocols</p>
+                        <div class="readmore_bt"><a href="#">Read More</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- doctor section end -->
+      <!-- news section start -->
+      <div class="news_section layout_padding">
+         <div class="container">
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <h1 class="news_taital">Latest News</h1>
+                     <p class="news_text">
+Coronavirus Cases:
+682,048,548
+view by country
+Deaths:
+6,815,405
+Recovered:
+655,012,795
+</p>
+                     <div class="news_section_2 layout_padding">
+                        <div class="box_main">
+                           <div class="image_1"><img src="{% static "images/istockphoto-1289183908-612x612.jpg" %}"></div>
+                           <h2 class="design_text">Coronavirus is Very dangerous</h2>
+                           <p class="lorem_text"> BECAUSE:Anyone who is infected with COVID-19 can spread it to other people, even if the infected person does not have symptoms, according to the CDC. In general, the more closely you interact with others and the longer that interaction, the higher the risk of COVID-19 spread. Indoor spaces are more risky than outdoor spaces.</p>
+                           <div class="read_btn"><a href="#">Read More</a></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                    <h1 class="news_taital">Latest News</h1>
+                       <p class="news_text">when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+                     <div class="news_section_2 layout_padding">
+                        <div class="box_main">
+                           <div class="image_1"><img src="{% static "images/istockphoto-1289182617-612x612.jpg" %}"></div>
+                           <h2 class="design_text">Coronavirus is contagious</h2>
+                           <p class="lorem_text">AS:Breathing in air when close to an infected person who is exhaling small droplets and particles that contain the virus. Having these droplets and particles land on the eyes, nose, or mouth. Touching the eyes, nose, and mouth with hands that have the virus on them</p>
+                           <div class="read_btn"><a href="#">Read More</a></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                    <h1 class="news_taital">Latest News</h1>
+                     <p class="news_text">when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+                     <div class="news_section_2 layout_padding">
+                        <div class="box_main">
+                           <div class="image_1"><img src="{% static "images/istockphoto-1289183710-612x612.jpg" %}"></div>
+                           <h2 class="design_text">Coronavirus causes other diseases</h2>
+                           <p class="lorem_text">  SUCH AS:  Pneumonia and trouble breathing.
+    Organ failure in several organs.
+    Heart problems.
+    A severe lung condition that causes a low amount of oxygen to go through your bloodstream to your organs (acute respiratory distress syndrome)
+    Blood clots.
+    Acute kidney injury.</p>
+                           <div class="read_btn"><a href="#">Read More</a></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+               <i > < </i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+               <i > > </i>
+               </a>
+            </div>
+            </div>
+         </div>
+      </div>
+      <!-- news section end -->
+      <!-- update section start -->
+      <div class="update_section">
+         <div class="container">
+            <h1 class="update_taital">Get Every Update.... </h1>
+            <form action="/action_page.php" >
+               <div class="form-group">
+                   <textarea class="update_mail" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
+               </div>
+               <div class="subscribe_bt"><a href="#">Subscribe Now</a></div>
+            </form>
+         </div>
+      </div>
+      <!-- update section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="footer_section_2">
+               <div class="row">
+                  <div class="col-lg-3 col-sm-6">
+                     <h2 class="useful_text">Resources</h2>
+                     <div class="footer_menu">
+                        <ul>
+                           <li><a href="#">What we do</a></li>
+                           <li><a href="#">We Provide:</a></li>
+                           <li><a href="#">Health Services</a></li>
+                           <li><a href="#">Health Advise</a></li>
+                           <li><a href="#">Protection</a></li>
+                           <li><a href="#">Care</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <h2 class="useful_text">About</h2>
+                     <p class="footer_text">Our main aim is to help people function at their peak, where life
+                         is lived at its fullest. We are happy when we do what we love. We get the most
+                         pleasure from our work when we help our patients and clients achieve their best;
+                         mentally, physically emotionally and aesthetically. We love to help people function
+                         at their peak, where life is lived at its fullest.
+
+</p>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <h2 class="useful_text">Contact Us</h2>
+                     <div class="location_text">
+                        <ul>
+                           <li>
+                              <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                              <span class="padding_15">Location</span></a>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>
+                              <span class="padding_15">Call 0759193201</span></a>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>
+                              <span class="padding_15">soniahnjogu435@gmail.com</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <h2 class="useful_text">countrys</h2>
+                     <div class="map_image"><img src="{% static "images/map-bg.png" %}"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <p class="copyright_text">© 2023 All Rights Reserved.<a href="https://html.design"></a></p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="{% static "js/jquery.min.js" %}"></script>
+      <script src="{% static "js/popper.min.js" %}"></script>
+      <script src="{% static "js/bootstrap.bundle.min.js" %}"></script>
+      <script src="{% static "js/jquery-3.0.0.min.js" %}"></script>
+      <script src="{% static "js/plugin.js" %}"></script>
+      <!-- sidebar -->
+      <script src="{% static "js/jquery.mCustomScrollbar.concat.min.js" %}"></script>
+      <script src="{% static "js/custom.js" %}"></script>
+      <!-- javascript -->
+      <script src="{% static "js/owl.carousel.js" %}"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <script>
+         $(document).ready(function(){
+         $( ".fancybox").fancybox({
+         openEffect: "none",
+         closeEffect: "none"
+         });
+
+         $(".zoom").hover(function(){
+
+         $(this).addClass('transition');
+         }, function(){
+
+         $(this).removeClass('transition');
+         });
+         });
+      </script>
+      <script>
+         function openNav() {
+         document.getElementById("myNav").style.width = "100%";
+         }
+         function closeNav() {
+         document.getElementById("myNav").style.width = "0%";
+         }
+      </script>
+   </body>
+</html>
